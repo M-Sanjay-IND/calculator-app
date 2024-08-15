@@ -7,14 +7,13 @@ function clrDisplay() {
     display.value = ""
 }
 function calculateNo() {
-    try{  
+    try {
     display.value = eval(display.value)
-    Math.round(display)
-    }   
-    catch(error) {
-        display.value = "";
     }
-}
+    catch(error) {
+        display.value = "Error"
+    }
+}  
 function clrBefore() {
     display.value = display.value.toString().slice(0, -1)
 }
