@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="index.css">
+     <link rel="icons" href="">
+     <title>Calculator App</title>
+</head>
+<body>
+     <div id="calc-body">
+          <input type="text" id="appendDisplay" readonly>
+          <div id="icons">
+               <button class="optr2" onclick="clrDisplay()">C</button>
+               <button class="optr2" onclick="clrBefore()">AC</button>
+               <button class="optr2" onclick="expressDisplay('%')">%</button>
+               <button class="optr2" onclick="expressDisplay('3.14')">&pi;</button>
+          <button onclick="expressDisplay('1')">1</button>
+           <button onclick="expressDisplay('2')">2</button>
+           <button onclick="expressDisplay('3')">3</button>
+           <button class="optr" onclick="expressDisplay('+')">+</button>
+           <button onclick="expressDisplay('4')">4</button>
+           <button onclick="expressDisplay('5')">5</button>
+           <button onclick="expressDisplay('6')">6</button>
+           <button class="optr" onclick="expressDisplay('-')">-</button>
+           <button onclick="expressDisplay('7')">7</button>
+           <button onclick="expressDisplay('8')">8</button>
+           <button onclick="expressDisplay('9')">9</button>
+            <button class="optr" onclick="expressDisplay('*')">x</button>
+            <button onclick="expressDisplay('0')">0</button>
+            <button onclick="expressDisplay('.')">.</button>
+            <button class="optr" onclick="calculateNo('=')">=</button>
+            <button class="optr" onclick="expressDisplay('/')">/</button>
+          </div>
+     </div>
+     <script src="index.js"></script>
+</body>
+</html>
